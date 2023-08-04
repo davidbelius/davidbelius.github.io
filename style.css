@@ -1,0 +1,99 @@
+/*
+ Styl pro hlavni stranku a publikace
+*/
+body {
+	font-family: sans-serif;
+	background: #ffffff;
+}
+
+ol {
+	margin-top: 0px;
+}
+
+ol li {
+	margin: 5px; 
+	padding: 2px;
+}
+
+ol li:hover {
+	background: #fafafa;
+}
+
+ul {
+	margin-top: 0px;
+}
+
+ul li {
+	margin: 5px; 
+	padding: 2px;
+}
+
+ul li:hover {
+	background: #fafafa;
+}
+
+h3 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+a:link {
+   color: #c46c00;
+}
+
+a:visited {
+   color: #fa9b00;
+}
+
+a:hover {
+   color: #fa9b00;
+}
+
+div.abstract {
+	display: none; 
+	padding: 2pt;
+	margin: 4pt;
+	width: 80%;
+	background: #fad69b;
+	font-size: small;
+}
+
+span.math {
+	white-space: nowrap;
+}
+
+div.math {
+	padding: 4pt;
+	white-space: nowrap;
+	text-align: center;
+}
+/*
+ Styl pro abstrakty
+*/
+
+address.c3 {
+	text-align:left;
+}
+p.c2 {
+	color: #c46c00;
+}
+
+h2.c1 {
+	text-align: left;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    vertical-align:top;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

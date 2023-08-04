@@ -1,1 +1,363 @@
-test
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Design borrowed from Jiri Cerny: http://www.math.ethz.ch/~cerny/ -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>David Belius</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript">
+			function toggle_abstract(name) {
+				var abstractdiv = document.getElementById(name);
+				if(abstractdiv.style.display == 'block') {
+					abstractdiv.style.display = 'none';
+				} else {
+					abstractdiv.style.display = 'block';
+				}
+			}
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-24129795-1']);
+				_gaq.push(['_trackPageview']);
+
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+		</script>
+	</head>
+	<body>
+		<img align="right" src="david.jpg" alt="David Belius"/>
+
+		<h1>David Belius</h1>
+		
+		<p style="font-size: 120%">
+			I am Assistant Professor at the <a href="https://unidistance.ch/en/mathematics-and-computer-science/">Faculty of Mathematics and Computer Science</a> of <a href="http://www.unidistance.ch">UniDistance Suisse | FernUni Schweiz</a>.
+		</p>
+		<p>I am a mathematician and my main research interest is probability theory.</p>
+
+		<h2>Contact details</h2>
+
+		<p>E-mail: <a href ="mailto:david.belius@unidistance.ch">david.belius@unidistance.ch</a> | <a href ="mailto:david.belius@cantab.net">david.belius@cantab.net</a><br/>
+		<!-- <a href="https://dmi.unibas.ch/en/persons/david-belius-1/">Physical address and phone</a></p>-->
+
+		<p>
+			<h2>Group</h2>
+			<a href="https://dmi.unibas.ch/en/persons/fomichov-volodymyr/">Vladimir Fomichov</a> (Post-Doc)<br/>
+			<a href="https://www.dmi.unibas.ch/en/persons/francesco-concetti/">Francesco Concetti</a> (Post-Doc)<br/>	
+
+			<h3>Former members</h3>
+			<a href="https://www.dmi.unibas.ch/en/persons/leon-froeber/">Leon Fröber</a> (PhD student)<br/>
+			<a href="https://scholar.google.com/citations?hl=en&user=xezN5R8AAAAJ&view_op=list_works">Shuta Nakajima</a> (Post-doc; now senior lecturer at Meiji University)<br/>
+			<a href="https://mariusalexanderschmidt.de/index.html">Marius Schmidt</a> (Post-Doc; now Post-Doc at Frankfurt University) <br/>
+		</p>
+
+		<h2>Papers</h2>
+		<ol>
+
+			<li value="21">D. Belius, L. Fröber - Fluctuations of the ground state of the spiked spherical Sherrington-Kirkpatrick model, <i>submitted</i>.<br/>
+				[ <a href="javascript:toggle_abstract('gs_fluct')">Abstract</a> <a href="https://arxiv.org/abs/2307.14836">arxiv</a> ]			
+				<div class="abstract" id="gs_fluct">
+					The Sherrington-Kirkpatrick Hamiltonian is a random quadratic function on the high-dimensional sphere. This article studies the ground state (i.e. maximum) of this Hamiltonian with external field, or more generally with a non-linear "spike" term. We compute the level of the maximum to leading order, and under appropriate condition its first- and second-order fluctuations. The equivalent results are also derived for the maximum of the model's TAP free energy on the ball.
+				</div>
+			</li>
+
+			<li value="20">D. Belius, L. Fröber, J. Ko - TAP variational principle for the constrained overlap multiple spherical Sherrington-Kirkpatrick model, <i>submitted</i>.<br/>
+				[ <a href="javascript:toggle_abstract('mult_tap')">Abstract</a> <a href="https://arxiv.org/abs/2304.04031">arxiv</a> ]
+				<div class="abstract" id="mult_tap">
+					Spin glass models involving multiple replicas with constrained overlaps have been studied in [FPV92; PT07; Pan18a]. For the spherical versions of these models [Ko19; Ko20] showed that the limiting free energy is given by a Parisi type minimization. In this work we show that for Sherrington-Kirkpatrick (i.e. 2-spin) interactions, it can also be expressed in terms of a Thouless-Andersson-Palmer (TAP) variational principle. This is only the second spin glass model where a mathematically rigorous TAP computation of the free energy at all temperatures and external fields has been achieved. The variational formula we derive here also confirms that the model is replica symmetric, a fact which is natural but not obviously deducible from its Parisi formula.
+				</div>
+			</li>
+
+			<li value="19">A. Maillard, A. S. Bandeira, D. Belius, I. Dokmanić, S. Nakajima - Injectivity of ReLU networks: perspectives from statistical physics, <i>submitted</i>.<br/>
+				[ <a href="javascript:toggle_abstract('inj')">Abstract</a> <a href="https://arxiv.org/abs/2302.14112">arxiv</a> ]
+
+				<div class="abstract" id="inj">
+					When can the input of a ReLU neural network be inferred from its output? In other words, when is the network injective? 
+					We consider a single layer, \(x \mapsto \mathrm{ReLU}(Wx)\), with a random Gaussian \(m \times n\) matrix \(W\), 
+					in a high-dimensional setting where \(n, m \to \infty\).
+					Recent work connects this problem to spherical integral geometry giving rise to a conjectured sharp injectivity threshold for  \(\alpha = \frac{m}{n}\) by studying the expected Euler characteristic of a certain random set.
+					We adopt a different perspective and show that injectivity is equivalent to a property of the ground state of the spherical perceptron, an important spin glass model in statistical physics. By leveraging the (non-rigorous) replica symmetry-breaking theory, we derive analytical equations for the threshold whose solution is at odds with that from the Euler characteristic. Furthermore, we use Gordon's min--max theorem to prove that a replica-symmetric upper bound refutes the Euler characteristic prediction. 
+					Along the way we aim to give a tutorial-style introduction to key ideas from statistical physics in an effort to make the exposition accessible to a broad audience.
+					Our analysis establishes a connection between spin glasses and integral geometry but leaves open the problem of explaining the discrepancies.
+				</div>
+			</li>
+
+			<li value="18">D.Belius, M. Schmidt - Complexity of local maxima of given radial derivative for mixed <i>p</i>-spin Hamiltonians, <i>submitted</i>.<br/>
+				[ <a href="javascript:toggle_abstract('radderiv')">Abstract</a> <a href="https://arxiv.org/abs/2207.14361">arxiv</a> ]
+				<div class="abstract" id="radderiv">
+					We study the number of local maxima with given radial derivative of spherical
+					mixed p-spin models and prove that the second moment matches the square of the first moment
+					on exponential scale for arbitrary mixtures and any radial derivative. This is surprising, since
+					for the number of local maxima with given radial derivative and given energy the corresponding
+					result is only true for specific mixtures [Sub17; BSZ20].
+					<br/>
+					We use standard Kac-Rice computations to derive formulas for the first and second moment
+					at exponential scale, and then find a remarkable analytic argument that shows that the second
+					moment formula is bounded by twice the first moment formula in this general setting.
+					This also leads to a new proof of a central inequality used to prove concentration of the
+					number critical points of pure p-spin models of given energy in [Sub17] and removes the need
+					for the computer assisted argument used in that paper for 3 ≤ p ≤ 10.
+				</div>
+			</li>
+
+			<li value="17">D.Belius, M. Schmidt - Phase diagram for the TAP energy of the  <i>p</i>-spin spherical mean field spin glass model, <i>preprint</i>.<br/>
+				[ <a href="javascript:toggle_abstract('TAPHPASEDIAG')">Abstract</a> <a href="https://arxiv.org/abs/2207.02821">arxiv</a> ]
+
+				<div class="abstract" id="TAPHPASEDIAG">
+					We solve the Thouless-Anderson-Palmer (TAP) variational principle associated to the spherical pure p-spin mean field spin glass Hamiltonian and present a detailed phase diagram.
+					In the high temperature phase the maximum of variational principle is the annealed free energy of the model. In the low temperature phase the maximum, for which we give a formula, is strictly smaller.
+					The high temperature phase consists of three subphases. (1) In the first phase m=0 is the unique relevant TAP maximizer. (2) In the second phase there are exponentially many TAP maximizers, but m=0 remains dominant. (3) In the third phase, after the so called dynamic phase transition, m=0 is no longer a relevant TAP maximizer, and exponentially many non-zero relevant TAP solutions add up to give the annealed free energy.
+					Finally in the low temperature phase a subexponential number of TAP maximizers of near-maximal TAP energy dominate.
+				</div>
+			</li>
+
+			<li value="16">D. Belius - High temperature TAP upper bound for the free energy of mean field spin glasses, <i>submitted</i>.<br/>
+				[ <a href="javascript:toggle_abstract('TAPUB')">Abstract</a> <a href="https://arxiv.org/abs/2204.00681">arxiv</a> ]
+
+				<div class="abstract" id="TAPUB">
+					This work proves an upper bound for the free energy of the Sherrington-Kirkpatrick model and its generalizations
+					in terms of the Thouless-Anderson-Palmer (TAP) energy. The result applies to models with spherical or Ising spins and
+					any mixed <i>p</i>-spin Hamiltonian with external field or with a non-linear spike term. The bound is expected to be tight to
+					leading order at high temperature, and is non-trivial in the presence of an external field. For the proof a geometric
+					microcanonical method is employed, in which one covers the spin space with sets, each of which is centered at a magnetization
+					vector <i>m</i> and whose contribution to the partition function is bounded in terms of the TAP energy at <i>m</i>.
+				</div>
+			</li>
+
+			<li value="15">D. Banerjee, D. Belius - Fluctuations of the free energy of the mixed p-spin mean field spin glass model, <i>preprint</i>.<br/>
+				[ <a href="javascript:toggle_abstract('fluct')">Abstract</a>
+				<a href="https://arxiv.org/abs/2108.03109">arxiv</a> ]
+				<div class="abstract" id="fluct">
+					We prove the convergence in distribution of the fluctuations of the free energy of the mixed p-spin Sherrington-Kirkpatrick model with non-vanishing 2-spin component at high enough temperature. The limit is Gaussian, and the fluctuations are seen to arise from weighted cycle counts in the complete graph on the spin indices weighted by the 2-spin interaction matrix.
+				</div>
+			</li>
+
+			<li value="14">D. Belius, J. Černý, S. Nakajima, M. Schmidt - Triviality of the geometry of mixed p-spin spherical Hamiltonians with external field, <i>Journal of Statistical Physics 186.1 (2022): 1-3</i>.<br/>
+				[ <a href="javascript:toggle_abstract('triv')">Abstract</a>
+				<a href="https://link.springer.com/article/10.1007/s10955-021-02855-6">Journal link</a>
+				<a href="https://arxiv.org/abs/2104.06345">arxiv</a> ]
+
+				<div class="abstract" id="triv">
+					We study isotropic Gaussian random fields on the high-dimensional sphere with an added deterministic linear term, also known as mixed p-spin Hamiltonians with external field. We prove that if the external field is sufficiently strong, then the resulting function has trivial geometry, that is only two critical points. This contrasts with the situation of no or weak external field where these functions typically have an exponential number of critical points.
+					We give an explicit threshold h<sub>c</sub> for the magnitude of the external field necessary for trivialization and conjecture h<sub>c</sub> to be sharp.
+					The Kac-Rice formula is our main tool.
+					Our work extends [Fyo15], which identified the trivial regime for the special case of pure p-spin Hamiltonians with random external field.
+				</div>
+			</li>
+
+			<li value="13">T. Liu, A. Chaman, D. Belius, I. Dokmanic - Interpreting U-Nets via Task-Driven Multiscale Dictionary Learning,
+				<i> IEEE Transactions on Computational Imaging 8 (2022): 425–37. https://doi.org/10.1109/TCI.2022.3175309</i><br/>
+				[ <a href="javascript:toggle_abstract('unet')">Abstract</a>
+				<a href="https://arxiv.org/abs/2011.12815">arxiv</a> ]
+				<div class="abstract" id="unet">
+					U-Nets have been tremendously successful in many imaging inverse problems. In an effort to understand the source of this success, we show that one can reduce a U-Net to a tractable, well-understood sparsity-driven dictionary model while retaining its strong empirical performance. We achieve this by extracting a certain multiscale convolutional dictionary from the standard U-Net. This dictionary imitates the structure of the U-Net in its convolution, scale-separation, and skip connection aspects, while doing away with the nonlinear parts. We show that this model can be trained in a task-driven dictionary learning framework and yield comparable results to standard U-Nets on a number of relevant tasks, including CT and MRI reconstruction. These results suggest that the success of the U-Net may be explained mainly by its multiscale architecture and the induced sparse representation.
+				</div>
+			</li>
+
+			<li value="12">M. Samarin, V. Roth, D. Belius, Feature Learning and Random Features in Standard Finite-Width Convolutional Neural Networks: An Empirical Study, <i>Conference on Uncertainty in Artificial Intelligence (UAI) 2022</i>.<br/>
+				[ <a href="javascript:toggle_abstract('ntk')">Abstract</a>
+				<a href="https://openreview.net/pdf?id=ScIEZdIiqe5">pdf</a> ]
+				<div class="abstract" id="ntk">
+					The Neural Tangent Kernel is an important milestone in the ongoing effort to build a theory for deep learning. Its prediction that sufficiently wide neural networks behave as kernel methods, or equivalently as random feature models arising from linearized networks, has been confirmed empirically for certain wide architectures. In this paper, we compare the performance of two common finite-width convolutional neural networks, LeNet and AlexNet, to their linearizations on common benchmark datasets like MNIST and modified versions of it, CIFAR-10 and an ImageNet subset. We demonstrate empirically that finite-width neural networks, generally, greatly outperform the finite-width linearization of these architectures. When increasing the problem difficulty of the classification task, we observe a larger gap which is in line with common intuition that finite-width neural networks perform feature learning which finite-width linearizations cannot. At the same time, finite-width linearizations improve dramatically with width, approaching the behavior of the wider standard networks which in turn perform slightly better than their standard width counterparts. Therefore, it appears that feature learning for non-wide standard networks is important but becomes less significant with increasing width. We furthermore identify cases where both standard and linearized networks match in performance, in agreement with NTK theory, and a case where a wide linearization outperforms its standard width counterpart.
+				</div>
+			</li>
+
+			<li value="11">The TAP-Plefka variational principle for the spherical SK model</i> (with N. Kistler; <i>Communications in Mathematical Physics volume 367, pages 991–1017, 2019</i>)<br/>
+				[ <a href="javascript:toggle_abstract('2spinTAP')">Abstract</a>
+				<a href="http://arxiv.org/abs/1802.05782">arxiv</a>
+				<a href="https://rdcu.be/blB3a">Journal pdf</a> ]
+					
+				<div class="abstract" id="2spinTAP">
+					We reinterpret the Thouless-Anderson-Palmer approach to mean field spin glass models as a variational principle in the spirit of the Gibbs variational principle and the Bragg-Williams approximation. We prove this TAP-Plefka variational principle rigorously in the case of the spherical Sherrington-Kirkpatrick model.
+				</div>
+			</li>
+
+			<li value="10">Tightness for the Cover Time of compact two dimensional manifolds</i> (with J. Rosen and O. Zeitouni; <i>Probability Theory and Related Fields volume 176, pages1357–1437, 2020</i>)<br/>
+				[ <a href="javascript:toggle_abstract('tightness')">Abstract</a>
+				<a href="https://arxiv.org/abs/1711.02845">arxiv</a> ]
+
+				<div class="abstract" id="tightness">
+						Let <i>C<sub>&epsilon;,S<sup>2</sup></sub></i> denote the cover time of the two dimensional sphere <i>S<sup>2</sup></i> by a Wiener sausage of radius <i>&epsilon;</i>. We prove that
+						<i>&radic;C<sub>&epsilon;,S<sup>2</sup></sub>−2&radic;2(log&epsilon;<sup>-1</sup>-(1/4)loglog &epsilon;<sup>-1</sup>)</i> is tight.
+				</div>
+			</li>
+
+			<li value="9">Barrier estimates for a critical Galton-Watson process and the cover time of the binary tree
+				(with J. Rosen and O. Zeitouni; <i>Annales de l'Institut Henri Poincar&eacute;, Probabilit&eacute;s et Statistiques,
+					Volume 55, Number 1 (2019), 127-154.</i>)<br />
+				[ <a href="javascript:toggle_abstract('barrier')">Abstract</a>
+				<a href="https://arxiv.org/abs/1702.03189">arxiv</a> ]
+
+				<div class="abstract" id="barrier">For the critical Galton--Watson process with geometric offspring distributions we
+					provide sharp barrier estimates for barriers which are (small) perturbations of linear barriers. These are
+					useful in analyzing the cover time of finite graphs in the critical regime by random walk, and the Brownian
+					cover times of compact two dimensional manifolds. As an application of the barrier estimates, we prove that if
+					<i>C<sub>L</sub></i> denotes the cover time of the binary tree of depth <sub>L</sub> by simple walk, then
+					<i>&radic;C<sub>L</sub>/(2<sup>L+1</sup>) - (&radic;2log2) L + log L/(&radic;2 log2)</i> is tight. The latter
+					improves results of Aldous (1991), Bramson and Zeitouni (2009) and Ding and Zeitouni (2012). In a subsequent
+					article we use these barrier estimates to prove tightness of the Brownian cover time for the two-dimensional
+					sphere.
+				</div>
+			</li>
+
+			<li value="8">Maximum of the Riemann zeta function on a short interval of the critical line
+				(with L-P. Arguin, P. Bourgade, M. Radziwill and K. Soundararajan; <i>Communications in Pure and Applied Mathematics
+					72: 500-535 (2017) <a href="https://doi.org/10.1002/cpa.21791">https://doi.org/10.1002/cpa.21791</a>.</i>)<br />
+				[ <a href="javascript:toggle_abstract('zeta')">Abstract</a>
+				<a href="https://arxiv.org/abs/1612.08575">arxiv</a> ]
+
+				<div class="abstract" id="zeta">We prove the leading order of a conjecture by Fyodorov, Hiary and Keating, about the
+					maximum of the Riemann zeta function on random intervals along the critical line. More precisely, if t is
+					uniformly distributed in [T,2T], then max |t - u| &le; log |&zeta;(1/2 + iu)| =(1 + o(1))loglogT
+					with probability converging to 1 as T &rarr; &infin;.
+				</div>
+			</li>
+
+			<li value="7">Maximum of the Ginzburg-Landau fields
+				(with W. Wu; <i>Ann. Probab. 48 (6) 2647 - 2679, November 2020. <a
+						href="https://doi.org/10.1214/19-AOP1416">https://doi.org/10.1214/19-AOP1416</a>)</i><br />
+				[ <a href="javascript:toggle_abstract('GL')">Abstract</a>
+				<a
+					href="https://projecteuclid.org/journals/annals-of-probability/volume-48/issue-6/Maximum-of-the-GinzburgLandau-fields/10.1214/19-AOP1416.short">Journal
+					link</a>
+				<a href="https://arxiv.org/abs/1610.04195">arxiv</a> ]
+
+				<div class="abstract" id="GL">We study two dimensional massless field in a box with potential
+					V(&nabla;&phi;(&middot;)) and zero boundary condition, where V is any symmetric and uniformly convex function.
+					Naddaf-Spencer and Miller proved the macroscopic averages of this field converge to a continuum Gaussian free
+					field. In this paper we prove the distribution of local marginal &phi;(x), for any x in the bulk, has a Gaussian
+					tail. We further characterize the leading order of the maximum and dimension of high points of this field, thus
+					generalize the results of Bolthausen-Deuschel-Giacomin and Daviaud for the discrete Gaussian free field.
+				</div>
+			</li>
+
+			<li value="6">Maximum of the characteristic polynomial of random unitary matrices
+				(with L-P. Arguin and P. Bourgade; <i>Communications in Mathematical Physics, Volume 349 (2017), Issue 2, pp
+					703-751.</i>)<br />
+				[ <a href="javascript:toggle_abstract('CUE')">Abstract</a>
+				<a href="https://link.springer.com/content/pdf/10.1007%2Fs00220-016-2740-6.pdf">Journal pdf</a>
+				<a href="http://arxiv.org/abs/1511.07399">arxiv</a> ]
+
+				<div class="abstract" id="CUE">
+					It was recently conjectured by Fyodorov, Hiary and Keating that the maximum of the characteristic polynomial on
+					the unit circle of a N×N random unitary matrix sampled from the Haar measure grows like CN/(logN)<sup>3/4</sup>
+					for some random variable C. In this paper, we verify the leading order of this conjecture, that is, we prove
+					that with high probability the maximum lies in the range [N<sup>1−ε</sup>,N<sup>1+ε</sup>], for arbitrarily
+					small ε. The method is based on identifying an approximate branching random walk in the Fourier decomposition of
+					the characteristic polynomial, and uses techniques developed to describe the extremes of branching random walks
+					and of other log-correlated random fields. A key technical input is the asymptotic analysis of Toeplitz
+					determinants with dimension-dependent symbols. The original argument for these asymptotics followed the general
+					idea that the statistical mechanics of 1/f-noise random energy models is governed by a freezing transition. We
+					also prove the conjectured freezing of the free energy for random unitary matrices.
+				</div>
+			</li>
+
+
+			<li value="5">Maxima of a randomized Riemann Zeta function, and branching random walks
+				(with L-P. Arguin and A. Harper; <i>Annals of Applied Probability, Volume 27, Number 1 (2017), pp 178-215.</i>)<br/>
+				[ <a href="javascript:toggle_abstract('random_zeta')">Abstract</a>
+				<a
+					href="https://projecteuclid.org/journals/annals-of-applied-probability/volume-27/issue-1/Maxima-of-a-randomized-Riemann-zeta-function-and-branching-random/10.1214/16-AAP1201.full">Journal</a>
+				<a href="https://arxiv.org/abs/1506.00629">arxiv</a> ]
+
+				<div class="abstract" id="random_zeta">
+					A recent conjecture of Fyodorov--Hiary--Keating states that the maximum of the absolute value of the Riemann
+					zeta function on a typical bounded interval of the critical line is exp(loglog T − (3/4) logloglogT + O(1)), for
+					an interval at (large) height T. In this paper, we verify the first two terms in the exponential for a model of
+					the zeta function, which is essentially a randomized Euler product. The critical element of the proof is the
+					identification of an approximate tree structure, present also in the actual zeta function, which allows us to
+					relate the maximum to that of a branching random walk.
+				</div>
+			</li>
+
+			<li value="4">The subleading order of two dimensional cover times (with N. Kistler; <i>Probability Theory and Related Fields, Volume 167 (2017), Issue 1, pp 461-552.</i>)<br />
+				[ <a href="javascript:toggle_abstract('two_dim_torus_cover_time')">Abstract</a>
+				<a href="https://link.springer.com/content/pdf/10.1007%2Fs00440-015-0689-6.pdf">Journal pdf</a>
+				<a href="https://arxiv.org/abs/1405.0888">arxiv</a>
+				]
+
+				<div class="abstract" id="two_dim_torus_cover_time">
+					The epsilon-cover time of the two dimensional torus by Brownian motion is the time it takes for the process to
+					come within distance epsilon>0 from any point. Its leading order in the small epsilon-regime has been
+					established by Dembo, Peres, Rosen and Zeitouni [Ann. of Math., 160 (2004)]. In this work, the second order
+					correction is identified. The approach relies on a multi-scale refinement of the second moment method, and draws
+					on ideas from the study of the extremes of branching Brownian motion.
+				</div>
+			</li>
+
+			<li value="3">Gumbel fluctuations for cover times in the discrete torus (<i>Probability Theory and Related Fields, Volume 157 (2013), Issue 3-4, pp 635-689.</i>)<br />
+				[ <a href="javascript:toggle_abstract('torus_cover_time')">Abstract</a>
+				<a href="https://link.springer.com/content/pdf/10.1007%2Fs00440-012-0467-7.pdf">Journal pdf</a>
+				<a href="https://arxiv.org/abs/1202.0190">arxiv</a> ]
+
+				<div class="abstract" id="torus_cover_time">
+					This work proves that the fluctuations of the cover time of simple random walk in
+					the discrete torus of dimension at least three with large side-length are governed by the Gumbel
+					extreme value distribution. This result was conjectured for example in the book by Aldous &amp; Fill. We also
+					derive some
+					corollaries which qualitatively describe <i>how</i> covering happens. In addition, we develop a new
+					and stronger coupling of the model of random interlacements, introduced by Sznitman,
+					and random walk in the torus. This coupling is used to prove the cover time result and is also
+					of independent interest.
+				</div>
+			</li>
+
+			<li value="2">Cover times in the discrete cylinder. (<i>Preprint</i>)<br/>
+				[ <a href="javascript:toggle_abstract('ctdc')">Abstract</a>
+				<a href="https://arxiv.org/abs/1103.2079">arxiv</a> ]
+
+				<div class="abstract" id="ctdc">
+					This article proves that, in terms of local times, the properly rescaled and re-centered
+					cover times of finite subsets of the discrete cylinder by simple random walk
+					converge in law to the Gumbel distribution, as the cardinality of the set goes to
+					infinity. As applications we obtain several other results related to covering in the
+					discrete cylinder. Our method is new and involves random interlacements, which
+					were introduced in [22]. To enable the proof we develop a new stronger coupling
+					of simple random walk in the cylinder and random interlacements, which is also of
+					independent interest.
+				</div>
+			</li>
+
+			<li value="1">Cover levels and random interlacements (<i>Annals of Applied Probability, Volume 22, Number 2 (2012), pp 522-540.</i>)<br />
+				[ <a href="javascript:toggle_abstract('clri')">Abstract</a>
+				<a
+					href="https://projecteuclid.org/journals/annals-of-applied-probability/volume-22/issue-2/Cover-levels-and-random-interlacements/10.1214/11-AAP770.full">Journal</a>
+				<a href="https://arxiv.org/abs/1103.2072">arxiv</a> ]
+
+				<div class="abstract" id="clri">
+					This note investigates cover levels of finite sets in the random interlacements model, that is the
+					least level such that the set is completely contained in the random interlacement at that level. It
+					proves that as the cardinality of a set goes to infinity, the rescaled and recentered cover level
+					tends in distribution to the Gumbel distribution with cumulative distribution function <i>exp(-exp(-z))</i>.
+				</div>
+			</li>
+		</ol>
+
+
+		<h2>Spin glass workshop 2022</h2>
+
+		I co-organized a <a href="https://indi.to/spin-glasses-les-diablerets-2022">Workshop on Spin Glasses</a> in Les Diablerets, Switzerland in September 2022 <del>Febuary 2022</del>.
+		Videos of some lectures will be made avaible at <a href="https://swissmaprs.ch/videos/">https://swissmaprs.ch/videos/</a>.
+
+
+		<h1>Previous affiliations</h1>
+		<ul>
+			<li> <a href="https://www.snf.ch/en/qB3Cj7WzYGcqbgVi/funding/funding/discontinued-funding-schemes/snsf-professorships">SNF Professor</a> at the <a href="https://www.dmi.unibas.ch/">Department of Mathematics and Computer Science</a> of the <a href="https://www.unibas.ch/">University of Basel</a>.</li>
+			<li> <a href="https://www.math.uzh.ch/index.php?id=lecturerprogram&L=1">Lecturer</a> at the <a href="http://math.uzh.ch">Institute of Mathematics</a> of the <a href="http://www.uzh.ch">University of Zurich</a>.</li>
+		<li> <a href="http://www.cims.nyu.edu/programs/visiting.html">Courant Instructor</a> at the <a href="http://cims.nyu.edu">Courant Institute of Mathematical Sciences</a> of <a href="http://www.nyu.edu">New York University</a>. </li>
+		<li> <a href="http://www.crm.umontreal.ca/">CRM</a>-<a href="http://www.math.uqam.ca/ism/index_en.html">ISM</a> and <a href="http://www.snf.ch">SNF</a> Postdoctoral Fellow at <a href="http://www.crm.umontreal.ca/">Centre de Recherches Math&eacute;matiques</a> and <a href="http://www.math.mcgill.ca/">McGill University</a>. (My hosts were <a href="http://www.math.mcgill.ca/louigi">Louigi Addario-Berry</a> and <a href="http://www.dms.umontreal.ca/~arguinlp">Louis-Pierre Arguin</a>.)</li>
+		<li> PhD candidate at
+			<a href="http://www.math.ethz.ch">ETH Zurich</a> (my adviser was <a href="http://www.math.ethz.ch/~sznitman/">Alain-Sol Sznitman</a>).</li>
+		<li> Undergraduate and Master Student (Part III) at
+				<a href="http://www.maths.cam.ac.uk/">Cambridge University</a>.</li>
+		</ul>
+
+		<!--<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a></p>-->
+	</body>
+</html>
