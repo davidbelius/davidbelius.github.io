@@ -6,7 +6,7 @@
 	<head>
 		<title>David Belius</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript">
 			function toggle_abstract(name) {
 				var abstractdiv = document.getElementById(name);
@@ -63,8 +63,29 @@
 
 		<h2>Papers</h2>
 		<ol>
+			<li value="27">D. Belius, F. Concetti, G. Genovese - Variational formula for the logarithmic potential of free additive convolutions, <i>submitted</i>.<br/>
+				[ <a href="javascript:toggle_abstract('freeconv')">Abstract</a> <a href="https://arxiv.org/abs/2506.19064">arxiv</a> ]
+				<div class="abstract" id="freeconv">
+					We establish a general variational formula for the logarithmic potential of the free additive convolution of two compactly supported probability measures on &#8477;. The formula is given in terms of the R-transform of the first measure, and the logarithmic potential of the second measure. The result applies in particular to the additive convolution with the semicircle or Marchenko-Pastur laws, for which the formula simplifies. The logarithmic potential of additive convolutions appears for instance in estimates of the determinant of sums of independent random matrices.
+				</div>
+			</li>
+
+			<li value="26">G. Vlassis, D. Belius, V. Fomichov - A thorough reproduction and evaluation of &mu;P, <i>Transactions on Machine Learning Research, 2025</i>.<br/>
+				[ <a href="javascript:toggle_abstract('mup')">Abstract</a> <a href="https://openreview.net/forum?id=AFxEdJwQcp">OpenReview</a> ]
+				<div class="abstract" id="mup">
+					This paper is an independent empirical reproduction of the claimed benefits of the &mu;P parametrization proposed by Yang et al. (2020, 2021). Under the so-called Standard Parametrization (SP), the weights of neural networks are initialized from the Gaussian distribution with variance scaling as the inverse of 'fan-in', with the learning rate being the same for every layer. While this guarantees that (pre)activations are O(1) at initialization with respect to width, it causes their scale to be width-dependent during training. To address this, the Maximal Update Parametrization (&mu;P) was proposed, which is also claimed to make the optimal value of various hyperparameters independent of width. However, despite its alleged benefits, &mu;P has not gained much traction among practitioners. Possibly, this could stem from a lack of thorough independent evaluation of &mu;P against SP. We address this by independently reproducing the empirical claims of the original works. At the same time, we substantially increase the scale of the experiments, by training 16000 neural networks of sizes from 500 to 1B parameters, and empirically investigate &mu;P's effect on outputs, gradient updates, weights, training loss and validation loss. We find that generally &mu;P indeed delivers on its promises, even though this does not always translate to improved generalization.
+				</div>
+			</li>
+
+			<li value="25">T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius - A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression, <i>Proceedings of the 38th Conference on Neural Information Processing Systems (NeurIPS), 2024</i>.<br/>
+				[ <a href="javascript:toggle_abstract('kernel_nips24')">Abstract</a> <a href='https://proceedings.neurips.cc/paper_files/paper/2024/hash/2bfb9435865f86ecaf7a43c49a00ba04-Abstract-Conference.html'>Proceedings link</a> <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/2bfb9435865f86ecaf7a43c49a00ba04-Paper-Conference.pdf">Conference PDF</a> <a href="https://arxiv.org/abs/2410.17796">arxiv</a> ]
+				<div class="abstract" id="kernel_nips24">
+					This paper conducts a comprehensive study of the learning curves of kernel ridge regression (KRR) under minimal assumptions. Our contributions are three-fold: 1) we analyze the role of key properties of the kernel, such as its spectral eigen-decay, the characteristics of the eigenfunctions, and the smoothness of the kernel; 2) we demonstrate the validity of the Gaussian Equivalent Property (GEP), which states that the generalization performance of KRR remains the same when the whitened features are replaced by standard Gaussian vectors, thereby shedding light on the success of previous analyzes under the Gaussian Design Assumption; 3) we derive novel bounds that improve over existing bounds across a broad range of settings such as (in)dependent feature vectors and various combinations of eigen-decay rates in the over/underparameterized regimes.
+				</div>
+			</li>
+
 			<li value="24">T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius - Characterizing Overfitting in Kernel Ridgeless Regression Through the Eigenspectrum, <i>Proceedings of the 41st International Conference on Machine Learning (ICML), 2024</i>.<br/>
-				[ <a href="javascript:toggle_abstract('kernel_icml24')">Abstract</a> <a href='https://proceedings.mlr.press/v235/cheng24g.html'>Proceedings link</a> </a> <a href="https://raw.githubusercontent.com/mlresearch/v235/main/assets/cheng24g/cheng24g.pdf">Conference PDF</a> ]
+				[ <a href="javascript:toggle_abstract('kernel_icml24')">Abstract</a> <a href='https://proceedings.mlr.press/v235/cheng24g.html'>Proceedings link</a> </a> <a href="https://raw.githubusercontent.com/mlresearch/v235/main/assets/cheng24g/cheng24g.pdf">Conference PDF</a> <a href="https://arxiv.org/abs/2402.01297">arxiv</a> ]
 				<div class="abstract" id="kernel_icml24">
 					We derive new bounds for the condition number of kernel matrices, which we then use to enhance existing non-asymptotic test error bounds for kernel ridgeless regression (KRR) in the over-parameterized regime for a fixed input dimension. For kernels with polynomial spectral decay, we recover the bound from previous work; for exponential decay, our bound is non-trivial and novel. Our contribution is two-fold: (i) we rigorously prove the phenomena of tempered overfitting and catastrophic overfitting under the sub-Gaussian design assumption, closing an existing gap in the literature; (ii) we identify that the independence of the features plays an important role in guaranteeing tempered overfitting, raising concerns about approximating KRR generalization using the Gaussian design assumption in previous literature.
 				</div>
@@ -77,8 +98,8 @@
 				</div>
 			</li>
 
-			<li value="22">T. S. Cheng, A. Lucchi, I. Dokmanic, A. Kratsios, D. Belius - A Theoretical Analysis of the Test Error of Finite-Rank Kernel Ridge Regression, <i>Proceedings of the 36th Conference on Neural Information Processing Systems (NIPS), 2023</i>.<br/>
-				[ <a href="javascript:toggle_abstract('kernel_nips23')">Abstract</a> <a href='https://papers.nips.cc/paper_files/paper/2023/hash/0f580c1ace3b857a390575ca42de7938-Abstract-Conference.html'>Proceedings link</a> </a> <a href="https://papers.nips.cc/paper_files/paper/2023/file/0f580c1ace3b857a390575ca42de7938-Paper-Conference.pdf">Conference PDF</a> ]
+			<li value="22">T. S. Cheng, A. Lucchi, I. Dokmanic, A. Kratsios, D. Belius - A Theoretical Analysis of the Test Error of Finite-Rank Kernel Ridge Regression, <i>Proceedings of the 37th Conference on Neural Information Processing Systems (NeurIPS), 2023</i>.<br/>
+				[ <a href="javascript:toggle_abstract('kernel_nips23')">Abstract</a> <a href='https://papers.nips.cc/paper_files/paper/2023/hash/0f580c1ace3b857a390575ca42de7938-Abstract-Conference.html'>Proceedings link</a> </a> <a href="https://papers.nips.cc/paper_files/paper/2023/file/0f580c1ace3b857a390575ca42de7938-Paper-Conference.pdf">Conference PDF</a> <a href="https://arxiv.org/abs/2310.00987">arxiv</a> ]
 				<div class="abstract" id="kernel_nips23">
 					Existing statistical learning guarantees for general kernel regressors often yield loose bounds when used with finite-rank kernels. Yet, finite-rank kernels naturally appear in a number of machine learning problems, e.g. when fine-tuning a pre-trained deep neural network's last layer to adapt it to a novel task when performing transfer learning. We address this gap for finite-rank kernel ridge regression (KRR) by deriving sharp non-asymptotic upper and lower bounds for the KRR test error of any finite-rank KRR. Our bounds are tighter than previously derived bounds on finite-rank KRR and, unlike comparable results, they also remain valid for any regularization parameters.
 				</div>
@@ -98,8 +119,8 @@
 				</div>
 			</li>
 
-			<li value="19">A. Maillard, A. S. Bandeira, D. Belius, I. Dokmanić, S. Nakajima - Injectivity of ReLU networks: perspectives from statistical physics, <i>submitted</i>.<br/>
-				[ <a href="javascript:toggle_abstract('inj')">Abstract</a> <a href="https://arxiv.org/abs/2302.14112">arxiv</a> ]
+			<li value="19">A. Maillard, A. S. Bandeira, D. Belius, I. Dokmanić, S. Nakajima - Injectivity of ReLU networks: perspectives from statistical physics, <i>Applied and Computational Harmonic Analysis 76 (2025), 101736</i>.<br/>
+				[ <a href="javascript:toggle_abstract('inj')">Abstract</a> <a href="https://doi.org/10.1016/j.acha.2024.101736">Journal link</a> <a href="https://arxiv.org/abs/2302.14112">arxiv</a> ]
 
 				<div class="abstract" id="inj">
 					When can the input of a ReLU neural network be inferred from its output? In other words, when is the network injective? 
@@ -186,7 +207,7 @@
 
 			<li value="12">M. Samarin, V. Roth, D. Belius, Feature Learning and Random Features in Standard Finite-Width Convolutional Neural Networks: An Empirical Study, <i>Conference on Uncertainty in Artificial Intelligence (UAI) 2022</i>.<br/>
 				[ <a href="javascript:toggle_abstract('ntk')">Abstract</a>
-				<a href="https://openreview.net/pdf?id=ScIEZdIiqe5">pdf</a> ]
+				<a href="https://openreview.net/pdf?id=ScIEZdIiqe5">pdf</a> <a href="https://arxiv.org/abs/2006.13645">arxiv</a> ]
 				<div class="abstract" id="ntk">
 					The Neural Tangent Kernel is an important milestone in the ongoing effort to build a theory for deep learning. Its prediction that sufficiently wide neural networks behave as kernel methods, or equivalently as random feature models arising from linearized networks, has been confirmed empirically for certain wide architectures. In this paper, we compare the performance of two common finite-width convolutional neural networks, LeNet and AlexNet, to their linearizations on common benchmark datasets like MNIST and modified versions of it, CIFAR-10 and an ImageNet subset. We demonstrate empirically that finite-width neural networks, generally, greatly outperform the finite-width linearization of these architectures. When increasing the problem difficulty of the classification task, we observe a larger gap which is in line with common intuition that finite-width neural networks perform feature learning which finite-width linearizations cannot. At the same time, finite-width linearizations improve dramatically with width, approaching the behavior of the wider standard networks which in turn perform slightly better than their standard width counterparts. Therefore, it appears that feature learning for non-wide standard networks is important but becomes less significant with increasing width. We furthermore identify cases where both standard and linearized networks match in performance, in agreement with NTK theory, and a case where a wide linearization outperforms its standard width counterpart.
 				</div>
